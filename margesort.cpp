@@ -27,7 +27,7 @@ void input()
     cout << "\nInputkan isi element array: " << endl;
     cout << "-------------------------" << endl;
 
- for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << "Array index ke- " << i << ": ";
         cin >> arr[i];
@@ -42,19 +42,19 @@ void mergeSort(int low, int high)
         return; // Step 1.a
     }
 
-   int mid = (low + high) / 2; // Step 2
+    int mid = (low + high) / 2; // Step 2
 
- // Step 3
+    // Step 3
     // fungsi rekursi - memanggil diri sendiri
     mergeSort(low, mid);      // Step 3.a
     mergeSort(mid + 1, high); // Step 3.b
 
-// Step 4
+    // Step 4
     int i = low;  // Step 4.a
     int j = mid + 1; // Step 4.b
     int k = low; // Step 4.c
 
- while (i <= mid && j <= high) // Step 4.d
+    while (i <= mid && j <= high) // Step 4.d
     {
         if (arr[i] <= arr[j]) // Step 4.d.i
         {
@@ -106,5 +106,3 @@ int main()
     mergeSort(0, n - 1);
     output();
 }
- 
-
