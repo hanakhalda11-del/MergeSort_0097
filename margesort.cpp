@@ -23,4 +23,8 @@ void input()
         }
     }
 
-    
+    cout << "-------------------------" << endl;
+    cout << "\nInputkan isi element array: " << endl;
+    cout << "-------------------------" << endl;
+
+   
